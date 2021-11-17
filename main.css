@@ -296,6 +296,7 @@
         font-size: 20px;
         font-weight: 600;
         color: #3F3F3F;
+        overflow: hidden;
     }
     .item__text p {
         font-family: "SourceSansPro";
@@ -304,6 +305,7 @@
         line-height: 20px;
         font-size: 16px;
         color: #3F3F3F;
+        overflow: hidden;
     }
     .item__text span {
         font-family: "SourceSansPro";

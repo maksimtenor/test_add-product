@@ -1,0 +1,84 @@
+@media screen and (max-width: 748px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .block__addProduct {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .block__addProduct h1 {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 35px;
+        left: unset;
+        top: unset;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        font-family: "SourceSansPro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        color: #3F3F3F;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        align-content: center;
+    }
+    form {
+        position: relative;
+        max-width: 332px;
+        max-height: 440px;
+        left: unset;
+        top: unset;
+        background: #FFFEFB;
+        box-shadow: 0px 20px 30px rgb(0 0 0 / 4%), 0px 6px 10px rgb(0 0 0 / 2%);
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -khtml-border-radius: 4px;
+    }
+    .block__productCard {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: unset;
+        left: unset;
+        top: unset;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    select {
+        font-family: "SourceSansPro";
+        border: none;
+        overflow: hidden;
+        background: #FFFEFB;
+        color: #B4B4B4;
+        box-shadow: 0px 2px 5px rgb(0 0 0 / 10%);
+        border-radius: 4px;
+        /* position: absolute; */
+        width: 121.49px;
+        height: 36px;
+        left: 10%;
+        top: 31px;
+        font-size: 12px;
+        line-height: 15px;
+        cursor: pointer;
+        outline: none;
+        padding: 10px 0 11px 16px;
+        /* -webkit-appearance: none; */
+    }
+}

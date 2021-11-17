@@ -11,6 +11,7 @@
 <!-- Connect CSS -->
     <section id="style">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="media.css">
     </section>
 
 <!-- Connect TEMPLATE -->
@@ -18,7 +19,7 @@
         <div class="wrapper">
             <div class="block__addProduct">
                 <h1>Добавление товара</h1>
-                <form id="addProduct__form" class="addProduct__form">
+                <form onsubmit="checkForm(this); return false" id="addProduct__form" class="addProduct__form">
                     <ul>
                         <li>
                             <label for="card__name">Наименование товара</label> <br>
@@ -27,7 +28,7 @@
     
                         <li>
                             <label for="card__descriprion">Описание товара</label>  <br>
-                            <textarea type="text" id="card__descriprion" class="card__descriprion button_valid" name="card__descriprion" placeholder="Введите описание товара" maxlength="300"></textarea>
+                            <textarea type="text" id="card__descriprion" class="card__descriprion button_valid" name="card__descriprion" placeholder="Введите описание товара" maxlength="118"></textarea>
                         </li>
     
                         <li>
@@ -138,6 +139,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="jquery.cookie.js"></script>
 
         <script src="main.js"></script>
     </section>
