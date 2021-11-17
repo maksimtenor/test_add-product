@@ -1,11 +1,15 @@
 
 // Появление/Исчезание кнопки удаления ".productCard--delete" при наведении на карточку товара
     $('.productCard--item').mouseenter(function() {
-        $('.item__img').eq($(this).append('<span class="productCard--delete"></span>'));
+        $('.item__img').eq($(this).append('<span class="productCard--delete"></span>').on('click', function(){
+            $(this).eq($(this).remove());
+        }));
+
 });
     $('.productCard--item').mouseleave(function() {
         $('.productCard--delete').remove();
 });
+
 // -------------------------------------------------------------------
 
 // Активация кнопки после введения в инпут данных
