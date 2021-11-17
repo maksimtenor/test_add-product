@@ -26,7 +26,7 @@ function checkForm(el) {
         price: el.card__price.value
     }
     
-    $('.block__productCard_items').append(`<div class="productCard--item" data-price="${formArr.price}"><div class="item__img"><img src="${formArr.linnkImg}" alt=""></div><div class="item__text"><h1>${formArr.name}</h1><p>${formArr.descr}</p><span>${formArr.price} руб.</span></div></div>`);
+    $('.block__productCard_items').append(`<div class="productCard--item" data-price="${formArr.price}"><div class="item__img"><img src="${formArr.linnkImg}" alt=""></div><div class="item__text"><h1>${formArr.name}</h1><p>${formArr.descr}</p><span>${formArr.price} руб.</span></div></div>`, 500);
 
     console.log(formArr.name);
 };
@@ -104,11 +104,6 @@ function checkForm(el) {
 
     // родительскому эленту пропиши в дата-атрибут data-price='10000'
     // собери все элементы в массив и отсортируй по data-price (через жс)
-
-
- 
-
-
     var defaults = $('.productCard--item');
 $('#productCard__sort').on('change', function(){
 
